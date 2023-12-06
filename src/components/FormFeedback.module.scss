@@ -1,0 +1,38 @@
+.form {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.input {
+  display: block;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  min-height: 46px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-size: 30px;
+
+  line-height: 38px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  resize: none;
+  padding: 0px 0px 8px;
+  border-radius: 0px;
+  border-style: none;
+  transition: box-shadow 0.2s ease;
+  outline: none;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  &:not(:focus) {
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 1px;
+  }
+}
+
+.hint {
+  font-size: 12px;
+  margin-bottom: 22px;
+}

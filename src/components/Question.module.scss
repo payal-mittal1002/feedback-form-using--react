@@ -1,0 +1,23 @@
+.title {
+  font-size: 28px;
+  line-height: 32px;
+
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.sub_question_section {
+  color: white;
+  opacity: 0.1;
+  transition: opacity 0.4s ease-out;
+  padding-bottom: 80px;
+}
+
+.sub_question_section_focused {
+  composes: sub_question_section;
+  opacity: 1;
+}
+
+.sub_title {
+  font-size: 22px;
+}

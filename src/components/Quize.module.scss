@@ -1,0 +1,36 @@
+.container {
+  height: 100vh;
+}
+
+.center_wrapper {
+  max-width: 840px;
+  padding: 0 10px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container::before {
+  content: '';
+  display: block;
+  height: calc(50% - 180px);
+}
+
+.footer {
+  height: 65%;
+  opacity: 0.2;
+  transition: opacity 0.4s ease-out;
+  padding-top: 10%;
+}
+
+.footer_focused {
+  composes: footer;
+  opacity: 1;
+}
+
+@media screen and (max-width: 876px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
